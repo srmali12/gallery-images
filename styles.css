@@ -1,0 +1,26 @@
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 30%, #fbc2eb 60%, #a18cd1 100%);
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hide items initially */
+.gallery-item {
+    display: none;
+}
+
+/* Force gallery images to uniform size and full width inside column */
+.gallery-item img {
+    width: 100%; /* Ensures it takes up full column width */
+    aspect-ratio: 3 / 2; /* Keeps a 612x408 ratio (3:2) */
+    object-fit: cover; /* Crop and scale nicely */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
